@@ -1,0 +1,9 @@
+config BR2_PACKAGE_ALSAPLAYER
+    bool "alsaplayer"
+    depends on BR2_TOOLCHAIN_HAS_THREADS
+    depends on BR2_USE_MMU # alsaplayer uses fork()
+    select BR2_PACKAGE_ALSA_LIB
+    help
+      Alsaplayer is a PCM player designed specifically for use with ALSA.
+
+      http://www.alsaplayer.org/
