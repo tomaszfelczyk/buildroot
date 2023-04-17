@@ -3,6 +3,8 @@ config BR2_PACKAGE_ALSAPLAYER
     depends on BR2_TOOLCHAIN_HAS_THREADS
     depends on BR2_USE_MMU # alsaplayer uses fork()
     select BR2_PACKAGE_ALSA_LIB
+    select BR2_PACKAGE_LIBOGG
+    select BR2_PACKAGE_LIBVORBIS
     help
       Alsaplayer is a PCM player designed specifically for use with ALSA.
 
