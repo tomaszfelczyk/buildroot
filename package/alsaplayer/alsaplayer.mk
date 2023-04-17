@@ -11,11 +11,13 @@ ALSAPLAYER_LICENSE = GPL-3.0+
 ALSAPLAYER_LICENSE_FILES = COPYING
 ALSAPLAYER_CFLAGS = $(TARGET_CFLAGS) -DEMBEDDED
 ALSAPLAYER_AUTORECONF = YES
-ALSAPLAYER_DEPENDENCIES = host-pkgconf alsa-lib libmad libogg libvorbis
+ALSAPLAYER_DEPENDENCIES = host-pkgconf alsa-lib libmad 
+
+# libogg libvorbis
 
 ALSAPLAYER_CONF_OPTS = \
-	--prefix=/usr --enable-mad \
-	--enable-shared=no \
+	--prefix=/usr \
+	--enable-mad \
 	--disable-option-checking \
 	--disable-audiofiletest \
 	--disable-vorbistest \
@@ -26,7 +28,8 @@ ALSAPLAYER_CONF_OPTS = \
 	--disable-jack \
 	--disable-gtk2 \
 	--disable-esd \
-	--disable-opengl
+	--disable-opengl \
+	--disable-oggvorbis
 
 # # Build and installation rules
 define ALSAPLAYER_BUILD_CMDS
