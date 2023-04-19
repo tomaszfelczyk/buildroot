@@ -1,0 +1,10 @@
+config BR2_PACKAGE_YAFT
+    bool "yaft"
+    depends on BR2_TOOLCHAIN_HAS_THREADS
+    depends on BR2_USE_WCHAR
+    depends on BR2_TOOLCHAIN_HAS_SYNC_4
+    help
+      Yet Another Framebuffer Terminal (yaft) is a simple terminal
+      emulator for systems that use the Linux framebuffer.
+
+      https://github.com/uobikiemukot/yaft

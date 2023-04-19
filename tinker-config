@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Buildroot -g7d2713215f Configuration
+# Buildroot -g2929447dd5-dirty Configuration
 #
 BR2_HAVE_DOT_CONFIG=y
 BR2_HOST_GCC_AT_LEAST_4_9=y
@@ -2219,6 +2219,7 @@ BR2_PACKAGE_PROTOBUF_ARCH_SUPPORTS=y
 #
 # Text and terminal handling
 #
+BR2_PACKAGE_YAFT=y
 # BR2_PACKAGE_AUGEAS is not set
 # BR2_PACKAGE_CLI11 is not set
 # BR2_PACKAGE_DOCOPT_CPP is not set
