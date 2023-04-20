@@ -1,5 +1,8 @@
-menu "Target packages"
+menu "Stereo Terminal Packages"
+    source "package/stereo-terminal-start/Config.in"
+endmenu
 
+menu "Target packages"
 	source "package/busybox/Config.in"
 	source "package/skeleton/Config.in"
 	source "package/skeleton-custom/Config.in"

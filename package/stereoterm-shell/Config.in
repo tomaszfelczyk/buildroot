@@ -1,0 +1,6 @@
+config BR2_PACKAGE_STEREO_TERMINAL_SHELL
+    bool "stereoterm-shell"
+    help
+        stereo terminal start package.
+
+        https://stereoterminal.audio
