@@ -1,5 +1,5 @@
 menu "Stereo Terminal Packages"
-    source "package/stereo-terminal-start/Config.in"
+    source "package/stereoterm-shell/Config.in"
 endmenu
 
 menu "Target packages"
